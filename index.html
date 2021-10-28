@@ -15,15 +15,110 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <div
+    <!-- <div
         style=" font-family: Arial, Helvetica, sans-serif;display: flex;flex-direction: column; justify-content: center;align-items: center;align-content: center;height: 100vh;">
         <h1>Visitá</h1>
         <img src="./images/logo.png" alt="Candy & Cakes | Pastelería Artesanal">
         <h3>PRÓXIMAMENTE</h3>
-    </div>
-
+    </div> -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./images/favicon.png" alt="Candy & Cakes | Pastelería Artesanal"><img src="./images/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                        <a class="nav-link" href="#nosotros">NOSOTROS</a>
+                        <a class="nav-link" href="#catalogo">CATALOGO</a>
+                        <a class="nav-link" href="#experiencias">EXPERIENCIAS</a>
+                        <a class="nav-link btn btn-outline-secondary" href="#contacto">CONTACTO</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="portada_banner"></section>
+        <section class="regalo" id="regalo">
+            <div class="regalo__titulo titulo" id="regalo_titulo">Tu próximo regalo</div>
+            <article class="regalo__ubicacion ubicacion" id="regalo_ubicacion">
+                <a href=""><div class="ubicacion__subtitulo subtitulo">UBICACION</div></a>
+                <img class="ubicacion__imagen imagen" src="/images/regalo/Group 139.png" alt="ubicacion__imagen">
+                <a href=""><div class="ubicacion__detalle detalle">LONGCHAMPS - BUENOS AIRES</div></a>
+            </article>
+            <article class="regalo__delivery delivery" id="regalo_delivery">
+                <a href=""><div class="delivery__subtitulo subtitulo">DELIVERY</div></a>
+                <img class="delivery__imagen imagen" src="/images/regalo/Group 140.png" alt="delivery__imagen">
+                <a href=""><div class="delivery__detalle detalle">A TODA ZONA SUR</div></a>
+            </article>
+            <article class="regalo__medios medios" id="regalo_medis">
+                <a href=""><div class="medios__subtitulo subtitulo">METODOS DE PAGO</div></a>
+                <img class="medios__imagen imagen" src="/images/regalo/Group 141.png" alt="medios__imagen">
+                <a href=""><div class="medios__detalle detalle">TODOS LOS MEDIOS DE PAGO</div></a>
+            </article>
+        </section>
+        <section id="nosotros">
+            <article>
+                <div class="nosotros__titulo titulo" id="nosotros_titulo">Un poco de nuestra historia...</div>
+                <div class="nosotros__detalle detalle">
+                    <p>Somos un emprendimiento de pastelería artesanal que ofrece una gran variedad de propuestas elaboradas con materia prima de primera calidad.
+                    Nuestro objetivo es mantener la calidad y originalidad más alta posible, y brindar no solo un producto sino también una experiencia a nuestros clientes.</p>
+                </div>
+                <img class="nosotros__imagen imagen" src="/images/nosotros/pastelera 1.png" alt="nosotros__imagen">
+            </article>
+        </section>
+        <section id="catalogo">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade catalogo__carousel carousel__candy" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item carousel__candy__item active">
+                        <img src="/images/catalogo/desayuno día de la madre 1.png" class="d-block w-10" alt="desayuno día de la madre 1">
+                    </div>
+                    <div class="carousel-item carousel__candy__item">
+                        <img src="/images/catalogo/desayuno día de la madre 1.png" class="d-block w-10" alt="desayuno día de la madre 1">
+                    </div>
+                    <div class="carousel-item carousel__candy__item">
+                        <img src="/images/catalogo/desayuno día de la madre 1.png" class="d-block w-10" alt="desayuno día de la madre 1">
+                    </div>
+                </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+            </div>
+        </section>
+        <section id="experiencias">
+            <article>EXPERIENCIA 1</article>
+            <article>EXPERIENCIA 2</article>
+            <article>EXPERIENCIA 3</article>
+        </section>
+        <section id="contacto">
+            <article>
+                <div class="contacto__titulo titulo" id="contacto_titulo">CONTACTO</div>
+                <div class="contacto__detalle detalle">
+                    <p>Podes comunicarte con nosotros a través de nuestras redes sociales y whatsapp.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="https://www.instagram.com/candy.cake19/" target="_blank">INSTA</a>
+                        <a class="nav-link" href="https://www.facebook.com/Candy-Cake-2468062716568223/" target="_blank">FACE</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </footer>
 </body>
-
 </html>
