@@ -1,9 +1,18 @@
 :root {
   --rosa-chicle: #e40a67;
   --celeste-cakes: #009de1;
+  --rosa-footer: #f38787;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  padding-top: 81px;
+  background-image: url("../images/background.png");
+  background-size: cover;
+  font-family: Poppins;
+  font-style: normal;
+}
 
 header {
   background-color: var(--rosa-chicle);
@@ -20,19 +29,10 @@ nav {
   background: var(--rosa-chicle);
   background-size: 100%;
   border-radius: 0px 0px 35% 35%;
-  font-family: Poppins;
   color: #ffffff;
 }
 
-#portada_banner h1 {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 72px;
-}
-
 #portada_banner p {
-  font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 21px;
@@ -47,6 +47,71 @@ nav {
   border-bottom: var(--celeste-cakes) 2px solid;
 }
 
-main {
-  padding-top: 81px;
+.rosa {
+  color: var(--rosa-chicle);
+}
+.titulo {
+  font-weight: bold;
+  font-size: 48px;
+
+  line-height: 72px;
+}
+
+#regalo .subtitulo,
+#regalo .detalle {
+  text-decoration-line: underline;
+}
+.subtitulo {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 36px;
+  color: var(--rosa-chicle);
+  text-align: center;
+}
+.detalle {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: var(--rosa-chicle);
+}
+
+.regalo-imagen {
+  height: 150px;
+  padding: 2rem 0;
+}
+
+#nosotros .subtitulo,
+#nosotros .detalle {
+  text-align: left;
+}
+
+.carousel-item img {
+  width: 10%;
+}
+
+#slider {
+  background-image: url(../images/Slider.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 33rem;
+}
+
+.carousel {
+  width: 24rem;
+}
+
+.carousel-control-prev {
+  left: -5rem !important;
+}
+
+.carousel-control-next {
+  right: -5rem !important;
+}
+
+footer {
+  background: var(--rosa-footer);
+}
+
+.celeste {
+  color: var(--celeste-cakes);
 }
