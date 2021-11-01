@@ -21,7 +21,7 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body data-spy="scroll">
     <!-- <div
         style=" font-family: Arial, Helvetica, sans-serif;display: flex;flex-direction: column; justify-content: center;align-items: center;align-content: center;height: 100vh;">
         <h1>Visitá</h1>
@@ -41,7 +41,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav container text-light d-flex justify-content-end">
                         <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
-                        <a class="nav-link" href="#nosotros">NOSOTROS</a>
+                        <a class="nav-link" href="#nosotros-">NOSOTROS</a>
                         <a class="nav-link" href="#catalogo">CATALOGO</a>
                         <a class="nav-link" href="#experiencias">EXPERIENCIAS</a>
                         <a class="nav-link btn btn-outline-light" href="#contacto">CONTACTO</a>
@@ -61,7 +61,7 @@
                             queridos
                             o para vos...</p>
                         <div class="d-grid  gap-2">
-                            <button class="btn btn-primary" type="button">CONTACTANOS</button>
+                            <a class="btn btn-primary" href="#contacto">CONTACTANOS</a>
                         </div>
                     </div>
                     <div class="col-7 my-auto align-self-center"><img src="./images/torta-home.png" alt=""></div>
@@ -90,8 +90,11 @@
                     <img class="regalo-imagen mx-auto d-block" src="./images/regalo/Group 141.png" alt="medios__imagen">
                     <h4 class="detalle">TODOS LOS MEDIOS DE PAGO</h4>
                 </article>
+
             </div>
+            <div id="nosotros-"></div>
         </section>
+
         <section id="nosotros" class="row container mx-auto my-5 py-5">
             <div class="col-1"></div>
             <div class="col-5 my-auto text-left">
@@ -107,7 +110,6 @@
             <div class="col-6">
                 <img class="nosotros__imagen imagen mx-auto d-block" src="./images/Pastelera.png"
                     alt="nosotros__imagen">
-            </div>
             </div>
         </section>
         <section id="catalogo" class="row container mx-auto my-5 py-5">
@@ -172,7 +174,6 @@
                     <li>Candy bars</li>
                     <li>Box temáticos</li>
                 </ul>
-
             </div>
         </section>
         <section id="experiencias" class=" my-5 py-5">
@@ -196,6 +197,8 @@
                     <p class="mb-5">Podes comunicarte con nosotros a través de nuestras redes sociales y whatsapp.</p>
                     <a href="https://www.facebook.com/Candy-Cake-2468062716568223/" target="_blank"><img
                             src="./images/fb-icon.png" class="mx-5" alt="Facebook" srcset=""></a>
+                    <a href="https://api.whatsapp.com/send?phone=541126428689&text=Hola!%20Quiero%20hacerte%20una%20consulta."
+                        target="_blank"><img src="./images/wa-icon.png" class="mx-5" alt="Instagram" srcset=""></a>
                     <a href="https://www.instagram.com/candy.cake19/" target="_blank"><img src="./images/ig-icon.png"
                             class="mx-5" alt="Instagram" srcset=""></a>
                 </div>
@@ -205,8 +208,7 @@
     <footer class="footer mt-auto py-3">
         <div class="col-12 text-center "><small> Copyright ©
                 <script>document.write(new Date().getFullYear());</script><br>Todos los derechos reservados<br>Este
-                sitio
-                fue creado por desarrollado por <span class="rosa text-white">Federico Ulbrich</span> y <span
+                sitio fue desarrollado por <span class="rosa text-white">Federico Ulbrich</span> y <span
                     class="rosa text-white">Lucas</span>.<br> Diseño UI/UX: <span class="rosa text-white">Federico
                     Acosta</span>. |
                 Marketing y
@@ -215,6 +217,11 @@
             </small></div>
     </footer>
     <script>$('.carousel').carousel()</script>
+    <!--    SMOOTH SCROLL-->
+    <script src="./js/smooth-scroll.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
 </body>
 
 </html>
