@@ -22,6 +22,18 @@ nav {
   background: var(--rosa-chicle);
 }
 
+footer {
+  background: var(--rosa-footer);
+}
+
+.celeste {
+  color: var(--celeste-cakes);
+}
+
+.rosa {
+  color: var(--rosa-chicle);
+}
+
 #portada_banner {
   position: relative;
   width: 100%;
@@ -47,13 +59,14 @@ nav {
   border-bottom: var(--celeste-cakes) 2px solid;
 }
 
-.rosa {
-  color: var(--rosa-chicle);
+a.nav-link.active {
+  color: var(--celeste-cakes) !important;
+  border-bottom: var(--celeste-cakes) 2px solid !important;
 }
+
 .titulo {
   font-weight: bold;
   font-size: 48px;
-
   line-height: 72px;
 }
 
@@ -106,12 +119,4 @@ nav {
 
 .carousel-control-next {
   right: -5rem !important;
-}
-
-footer {
-  background: var(--rosa-footer);
-}
-
-.celeste {
-  color: var(--celeste-cakes);
 }
