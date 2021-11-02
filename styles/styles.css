@@ -30,6 +30,10 @@ footer {
   color: var(--celeste-cakes);
 }
 
+.bg-celeste {
+  background-color: var(--celeste-cakes);
+}
+
 .rosa {
   color: var(--rosa-chicle);
 }
