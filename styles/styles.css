@@ -2,6 +2,8 @@
   --rosa-chicle: #e40a67;
   --celeste-cakes: #009de1;
   --rosa-footer: #f38787;
+  --text-size: 1rem;
+  --element-size: 1rem;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -54,6 +56,10 @@ footer {
   line-height: 21px;
 }
 
+#portada_banner img {
+  width: 100%;
+}
+
 .navbar-nav a {
   color: white !important;
   margin: 0 1rem;
@@ -70,6 +76,8 @@ a.nav-link.active {
 
 .titulo {
   font-weight: bold;
+  /* font-size: var(--text-size * 3);
+  line-height: var(--text-size * 4.5); */
   font-size: 48px;
   line-height: 72px;
 }
@@ -80,12 +88,16 @@ a.nav-link.active {
 }
 .subtitulo {
   font-size: 24px;
+  /* font-size: var(--text-size * 1.5);
+  line-height: var(--text-size * 2.25); */
   font-weight: bold;
   line-height: 36px;
   color: var(--rosa-chicle);
   text-align: center;
 }
 .detalle {
+  /* font-size: var(--text-size * .875);
+  line-height: var(--text-size * 1.3); */
   font-size: 14px;
   line-height: 21px;
   text-align: center;
@@ -110,6 +122,8 @@ a.nav-link.active {
   background-image: url(../images/Slider.png);
   background-repeat: no-repeat;
   background-size: 100%;
+  background-position-y: center;
+  background-position-x: -2vw;
   height: 33rem;
 }
 
@@ -123,4 +137,202 @@ a.nav-link.active {
 
 .carousel-control-next {
   right: -5rem !important;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  #portada_banner {
+    height: 55vh;
+    border-radius: 0px 0px 25% 25%;
+  }
+  
+  #portada_banner p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  
+  .titulo {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .subtitulo {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .detalle {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .regalo-imagen {
+    height: 130px;
+    padding: 1.7rem 0;
+  }
+
+  #slider {
+    background-size: 104%;
+    background-position-x: -2vw;
+  }
+
+  #catalogo {
+    display: grid;
+    grid-template-columns: (1, 100%);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "slider" 
+    "recetas";
+    justify-items: center;
+  }
+  .carousel {
+    width: 19rem;
+  }
+  
+  .carousel-control-prev {
+    left: -3rem !important;
+  }
+  
+  .carousel-control-next {
+    right: -3rem !important;
+  }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+  #portada_banner {
+    height: 75vh;
+  }
+  
+  #portada_banner p {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  
+  #portada_banner img {
+    width: 83%;
+  }
+
+  #portada_banner .btn {
+    width: 83%;
+  }
+  
+  .navbar-nav a {
+    margin: 0 1rem;
+  }
+  
+  .titulo {
+    /* font-size: var(--text-size * 3);
+    line-height: var(--text-size * 4.5); */
+    font-size: 39px;
+    line-height: 68px;
+  }
+
+  .subtitulo {
+    font-size: 20px;
+    /* font-size: var(--text-size * 1.5);
+    line-height: var(--text-size * 2.25); */
+    line-height: 29px;
+  }
+  .detalle {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  
+  .regalo-imagen {
+    height: 150px;
+    padding: 2rem 0;
+  }
+  
+  .carousel-item img {
+    width: 8%;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    body {
+      padding-top: 81px;
+      background-size: cover;
+    }
+    
+    #portada_banner {
+      position: relative;
+      width: 100%;
+      height: 90vh;
+      background-size: 100%;
+      border-radius: 0px 0px 35% 35%;
+    }
+    
+    #portada_banner p {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 21px;
+    }
+    
+    #portada_banner img {
+      width: 100%;
+    }
+    
+    .navbar-nav a {
+      margin: 0 1rem;
+    }
+    .navbar-nav a:hover {
+      border-bottom: var(--celeste-cakes) 2px solid;
+    }
+    
+    a.nav-link.active {
+      border-bottom: var(--celeste-cakes) 2px solid !important;
+    }
+    
+    .titulo {
+      /* font-size: var(--text-size * 3);
+      line-height: var(--text-size * 4.5); */
+      font-size: 48px;
+      line-height: 72px;
+    }
+
+    .subtitulo {
+      font-size: 24px;
+      /* font-size: var(--text-size * 1.5);
+      line-height: var(--text-size * 2.25); */
+      line-height: 36px;
+    }
+    .detalle {
+      /* font-size: var(--text-size * .875);
+      line-height: var(--text-size * 1.3); */
+      font-size: 14px;
+      line-height: 21px;
+    }
+    
+    .regalo-imagen {
+      height: 150px;
+      padding: 2rem 0;
+    }
+    
+    .carousel-item img {
+      width: 10%;
+    }
+    
+    #slider {
+      background-size: 100%;
+      height: 33rem;
+    }
+    
+    .carousel {
+      width: 24rem;
+    }
+    
+    .carousel-control-prev {
+      left: -5rem !important;
+    }
+    
+    .carousel-control-next {
+      right: -5rem !important;
+    }
+
 }
