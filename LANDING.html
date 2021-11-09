@@ -11,20 +11,20 @@
     <!-- CSS only -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 
 <body data-spy="scroll">
-    <header class="fixed-top">
-        <nav class="container navbar navbar-expand-lg navbar-light ">
-            <div class="container">
+    <header class="header fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="./images/logo-nav.png"
                         alt="Candy & Cakes | Pastelería Artesanal"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -47,27 +47,23 @@
     <main>
         <section id="portada_banner">
             <div class="container">
-
                 <div class="row">
-                    <div class="col-12 col-md-5 my-auto align-self-center order-2 order-md-1">
-                        <h1 class="titulo pb-4">Encuentra las mejores opciones para tus regalos</h1>
-                        <p class="pb-4">Nuestro trabajo es ayudarte a crear los mas ricos y divertidos presentes para
+                    <div class="col-10 offset-1 col-md-5 offset-md-0 my-auto align-self-center order-2 order-md-1">
+                        <h1 class="portada__titulo titulo">Encuentra las mejores opciones para tus regalos</h1>
+                        <p class="portada__p">Nuestro trabajo es ayudarte a crear los mas ricos y divertidos presentes para
                             tus seres
                             queridos
                             o para vos...</p>
-                        <div class="d-grid  gap-2">
-                            <a class="btn btn-lg btn-block btn-primary bg-celeste" href="#contacto">CONTACTANOS</a>
+                        <div class="d-grid gap-2">
+                            <a class="btn btn-lg btn-block col-8 col-md-10 mx-auto btn-primary bg-celeste" href="#contacto">CONTACTANOS</a>
                         </div>
                     </div>
-                    <div class="col-12 col-md-7 my-auto order-1 align-self-center"><img src="./images/torta-home.png"
-                            alt=""></div>
+                    <div class="col-10 offset-1 col-md-7 offset-md-0 my-3 order-1 align-self-center portada__imagen"><img src="./images/torta-home.png" alt=""></div>
                 </div>
             </div>
         </section>
         <section class="regalo my-5" id="regalo">
-
             <h2 class="titulo rosa text-center my-5" id="regalo_titulo">Tu próximo regalo</h2>
-
             <div class="row container mx-auto">
                 <article class="col-4 regalo__ubicacion ubicacion" id="regalo_ubicacion">
                     <h3 class="subtitulo">UBICACION</h3>
@@ -86,11 +82,9 @@
                     <img class="regalo-imagen mx-auto d-block" src="./images/regalo/Group 141.png" alt="medios__imagen">
                     <h4 class="detalle">TODOS LOS MEDIOS DE PAGO</h4>
                 </article>
-
             </div>
             <div id="nosotros-"></div>
         </section>
-
         <section id="nosotros" class="row container mx-auto my-5 py-5">
             <div class="col-1"></div>
             <div class="col-5 my-auto text-left">
@@ -103,7 +97,7 @@
                         producto sino también una experiencia a nuestros clientes.</p>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-4">
                 <img class="nosotros__imagen imagen mx-auto d-block" src="./images/Pastelera.png"
                     alt="nosotros__imagen">
             </div>
@@ -172,16 +166,16 @@
                 </ul>
             </div>
         </section>
-        <section id="experiencias" class="my-5 py-5">
-            <h2 class="subtitulo text-center mb-5">Experiencias de clientes</h2>
-            <div class="row mx-auto container my-5 py-5 ">
-                <article class="col-4" id="exp1"><img src="./images/exp1.png" class="mx-auto d-block"
+        <section id="experiencias" class="py-5">
+            <h2 class="subtitulo text-center">Experiencias de clientes</h2>
+            <div class="row mx-auto container py-3">
+                <article class="col-md-4" id="exp1"><img src="./images/exp1.png" class="mx-auto d-block"
                         alt="Experiencia de cliente" srcset="">
                 </article>
-                <article class="col-4" id="exp2"><img src="./images/exp2.png" class="mx-auto d-block"
+                <article class="col-md-4" id="exp2"><img src="./images/exp2.png" class="mx-auto d-block"
                         alt="Experiencia de cliente" srcset="">
                 </article>
-                <article class="col-4" id="exp3"><img src="./images/exp3.png" class="mx-auto d-block"
+                <article class="col-md-4" id="exp3"><img src="./images/exp3.png" class="mx-auto d-block"
                         alt="Experiencia de cliente" srcset="">
                 </article>
             </div>
@@ -205,11 +199,11 @@
         <div class="col-12 text-center "><small> Copyright ©
                 <script>document.write(new Date().getFullYear());</script><br>Todos los derechos reservados<br>Este
                 sitio fue desarrollado por <span class="rosa text-white">Federico Ulbrich</span> y <span
-                    class="rosa text-white">Lucas</span>.<br> Diseño UI/UX: <span class="rosa text-white">Federico
-                    Acosta</span>. |
+                    class="rosa text-white">Lucas es Lucas</span><br> Diseño UI/UX: <span class="rosa text-white">Federico
+                    Acosta</span> |
                 Marketing y
                 redes sociales:
-                <span class="rosa text-white">Lucía Toribio</span>.
+                <span class="rosa text-white">Lucía Toribio</span>
             </small></div>
     </footer>
     <script>$('.carousel').carousel()</script>
