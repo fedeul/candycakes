@@ -1,6 +1,8 @@
 :root {
   --rosa-chicle: #e40a67;
+  --amarillo-cakes: #eac436;
   --celeste-cakes: #009de1;
+  --azul-cakes: #345a96;
   --rosa-footer: #f38787;
   --text-size: 1rem;
   --element-size: 1rem;
@@ -17,11 +19,11 @@ body {
 }
 
 header {
-  background-color: var(--rosa-chicle);
+  background-color: var(--amarillo-cakes);
 }
 
 nav {
-  background: var(--rosa-chicle);
+  background: var(--amarillo-cakes);
 }
 
 footer {
@@ -36,15 +38,23 @@ footer {
   background-color: var(--celeste-cakes);
 }
 
+.bg-azul {
+  background-color: var(--azul-cakes) !important;
+  border-radius: 10px !important;
+}
+
 .rosa {
   color: var(--rosa-chicle);
+}
+.azul {
+  color: var(--azul-cakes);
 }
 
 #portada_banner {
   position: relative;
   width: 100%;
   height: 90vh;
-  background: var(--rosa-chicle);
+  background: var(--amarillo-cakes);
   background-size: 100%;
   border-radius: 0px 0px 35% 35%;
   color: #ffffff;
@@ -55,7 +65,7 @@ footer {
 }
 
 #portada_banner p {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   padding-bottom: 1.5rem;
@@ -70,13 +80,16 @@ footer {
   margin: 0 1rem;
 }
 .navbar-nav a:hover {
-  color: var(--celeste-cakes) !important;
-  border-bottom: var(--celeste-cakes) 2px solid;
+  color: var(--rosa-chicle) !important;
+  border-bottom: var(--rosa-chicle) 2px solid !important;
 }
 
 a.nav-link.active {
-  color: var(--celeste-cakes) !important;
-  border-bottom: var(--celeste-cakes) 2px solid !important;
+  color: var(--rosa-chicle) !important;
+  border-bottom: var(--rosa-chicle) 2px solid !important;
+}
+.btn-contact {
+  border-color: var(--rosa-chicle) !important;
 }
 
 .titulo {
@@ -145,7 +158,6 @@ a.nav-link.active {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-
   #portada_banner {
     height: 65vh;
     border-radius: 0px 0px 25% 25%;
@@ -154,14 +166,14 @@ a.nav-link.active {
   #portada_banner .titulo {
     font-size: 22px;
     line-height: 21px;
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
   }
-  
+
   #portada_banner p {
-    font-weight: 200;
+    font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
   }
 
   #portada_banner img {
@@ -207,20 +219,20 @@ a.nav-link.active {
     display: grid;
     grid-template-columns: (1, 100%);
     grid-template-rows: repeat(2, auto);
-    grid-template-areas: 
-    "slider" 
-    "recetas";
+    grid-template-areas:
+      "slider"
+      "recetas";
     justify-items: center;
   }
 
   .carousel {
     width: 19rem;
   }
-  
+
   .carousel-control-prev {
     left: -3rem !important;
   }
-  
+
   .carousel-control-next {
     right: -3rem !important;
   }
@@ -236,18 +248,16 @@ a.nav-link.active {
   #experiencias article {
     margin-top: 2rem;
   }
-
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-
   #portada_banner {
     height: 55vh;
     border-radius: 0px 0px 25% 25%;
   }
-  
+
   #portada_banner p {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 14px;
     line-height: 21px;
     padding-bottom: 1rem;
@@ -256,7 +266,7 @@ a.nav-link.active {
   #portada_banner .titulo {
     padding-bottom: 1rem;
   }
-  
+
   .titulo {
     font-size: 30px;
     line-height: 42px;
@@ -286,20 +296,20 @@ a.nav-link.active {
     display: grid;
     grid-template-columns: (1, 100%);
     grid-template-rows: repeat(2, auto);
-    grid-template-areas: 
-    "slider" 
-    "recetas";
+    grid-template-areas:
+      "slider"
+      "recetas";
     justify-items: center;
   }
 
   .carousel {
     width: 19rem;
   }
-  
+
   .carousel-control-prev {
     left: -3rem !important;
   }
-  
+
   .carousel-control-next {
     right: -3rem !important;
   }
@@ -312,15 +322,13 @@ a.nav-link.active {
   #experiencias .subtitulo {
     margin-bottom: 2rem;
   }
-
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-
   #portada_banner {
     height: 75vh;
   }
-  
+
   #portada_banner p {
     font-size: 16px;
     line-height: 24px;
@@ -331,15 +339,15 @@ a.nav-link.active {
     line-height: 60px;
     padding-bottom: 1.2rem;
   }
-  
+
   #portada_banner img {
     width: 83%;
   }
-  
+
   .navbar-nav a {
     margin: 0 1rem;
   }
-  
+
   .titulo {
     /* font-size: var(--text-size * 3);
     line-height: var(--text-size * 4.5); */
@@ -358,12 +366,12 @@ a.nav-link.active {
     font-size: 12px;
     line-height: 17px;
   }
-  
+
   .regalo-imagen {
     height: 150px;
     padding: 2rem 0;
   }
-  
+
   .carousel-item img {
     width: 8%;
   }
@@ -376,100 +384,97 @@ a.nav-link.active {
   #experiencias .subtitulo {
     margin-bottom: 2.5rem;
   }
-
 }
 
 @media only screen and (min-width: 1200px) {
+  body {
+    padding-top: 81px;
+    background-size: cover;
+  }
 
-    body {
-      padding-top: 81px;
-      background-size: cover;
-    }
-    
-    #portada_banner {
-      position: relative;
-      width: 100%;
-      height: 90vh;
-      background-size: 100%;
-      border-radius: 0px 0px 35% 35%;
-    }
-    
-    #portada_banner p {
-      font-weight: 300;
-      font-size: 14px;
-      line-height: 21px;
-    }
-    
-    #portada_banner img {
-      width: 100%;
-    }
-    
-    .navbar-nav a {
-      margin: 0 1rem;
-    }
+  #portada_banner {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-size: 100%;
+    border-radius: 0px 0px 35% 35%;
+  }
 
-    .navbar-nav a:hover {
-      border-bottom: var(--celeste-cakes) 2px solid;
-    }
-    
-    a.nav-link.active {
-      border-bottom: var(--celeste-cakes) 2px solid !important;
-    }
-    
-    .titulo {
-      /* font-size: var(--text-size * 3);
+  #portada_banner p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  #portada_banner img {
+    width: 100%;
+  }
+
+  .navbar-nav a {
+    margin: 0 1rem;
+  }
+
+  .navbar-nav a:hover {
+    border-bottom: var(--rosa-chicle) 2px solid;
+  }
+
+  a.nav-link.active {
+    border-bottom: var(--rosa-chicle) 2px solid !important;
+  }
+
+  .titulo {
+    /* font-size: var(--text-size * 3);
       line-height: var(--text-size * 4.5); */
-      font-size: 48px;
-      line-height: 72px;
-    }
+    font-size: 48px;
+    line-height: 72px;
+  }
 
-    .subtitulo {
-      font-size: 24px;
-      /* font-size: var(--text-size * 1.5);
+  .subtitulo {
+    font-size: 24px;
+    /* font-size: var(--text-size * 1.5);
       line-height: var(--text-size * 2.25); */
-      line-height: 36px;
-    }
+    line-height: 36px;
+  }
 
-    .detalle {
-      /* font-size: var(--text-size * .875);
+  .detalle {
+    /* font-size: var(--text-size * .875);
       line-height: var(--text-size * 1.3); */
-      font-size: 14px;
-      line-height: 21px;
-    }
-    
-    .regalo-imagen {
-      height: 150px;
-      padding: 2rem 0;
-    }
-    
-    .carousel-item img {
-      width: 10%;
-    }
-    
-    #slider {
-      background-size: 100%;
-      height: 33rem;
-    }
-    
-    .carousel {
-      width: 24rem;
-    }
-    
-    .carousel-control-prev {
-      left: -5rem !important;
-    }
-    
-    .carousel-control-next {
-      right: -5rem !important;
-    }
+    font-size: 14px;
+    line-height: 21px;
+  }
 
-    #experiencias {
-      margin-top: 3rem;
-      margin-bottom: 3rem;
-    }
+  .regalo-imagen {
+    height: 150px;
+    padding: 2rem 0;
+  }
 
-    #experiencias .subtitulo {
-      margin-bottom: 3rem;
-    }
+  .carousel-item img {
+    width: 10%;
+  }
 
+  #slider {
+    background-size: 100%;
+    height: 33rem;
+  }
+
+  .carousel {
+    width: 24rem;
+  }
+
+  .carousel-control-prev {
+    left: -5rem !important;
+  }
+
+  .carousel-control-next {
+    right: -5rem !important;
+  }
+
+  #experiencias {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  #experiencias .subtitulo {
+    margin-bottom: 3rem;
+  }
 }
