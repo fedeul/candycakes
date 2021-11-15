@@ -160,6 +160,10 @@ a.nav-link.active {
   right: -5rem !important;
 }
 
+.modal-dialog {
+  width: 77%;
+}
+
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   #portada_banner {
     height: 65vh;
