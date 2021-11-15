@@ -43,6 +43,11 @@ footer {
   border-radius: 10px !important;
 }
 
+.bg-rosa {
+  background-color: var(--rosa-chicle) !important;
+  border-radius: 10px !important;
+}
+
 .rosa {
   color: var(--rosa-chicle);
 }
@@ -140,8 +145,6 @@ a.nav-link.active {
   background-image: url(../images/Slider.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position-y: center;
-  background-position-x: -2vw;
   height: 33rem;
 }
 
