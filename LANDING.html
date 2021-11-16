@@ -25,9 +25,9 @@
 
 <body data-spy="scroll">
     <header class="header fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light container">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./images/logo-nav.png"
+                <a class="navbar-brand" href="#"><img class="img-fluid" src="./images/logo-nav.png"
                         alt="Candy & Cakes | Pastelería Artesanal"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -50,7 +50,7 @@
         <section id="portada_banner">
             <div class="container">
                 <div class="row">
-                    <div class="col-10 offset-1 col-md-5 offset-md-0 my-auto align-self-center order-2 order-md-1">
+                    <div class="col-12 col-md-5 offset-md-0 my-auto align-self-center order-2 order-md-1">
                         <h1 class="portada__titulo titulo rosa">Encuentra las mejores opciones para tus regalos</h1>
                         <p class="portada__p rosa">Nuestro trabajo es ayudarte a crear los mas ricos y divertidos
                             presentes
@@ -63,7 +63,7 @@
                                 href="#contacto">CONTACTANOS</a>
                         </div>
                     </div>
-                    <div class="col-10 offset-1 col-md-7 offset-md-0 my-3 order-1 align-self-center portada__imagen">
+                    <div class="col-12 col-md-7 offset-md-0 my-3 order-1 align-self-center portada__imagen">
                         <img src="./images/torta-home.png" alt="">
                     </div>
                 </div>
@@ -93,8 +93,8 @@
             <div id="nosotros-"></div>
         </section>
         <section id="nosotros" class="row container mx-auto my-5 py-3">
-            <div class="col-1"></div>
-            <div class="col-5 my-auto text-left">
+            <div class="col-1 d-none d-sm-block"></div>
+            <div class="col-12  col-md-6 offset-md-0 my-auto text-left order-2 order-md-1">
                 <div class="nosotros__titulo subtitulo" id="nosotros_titulo">Un poco de nuestra historia...</div>
                 <div class="nosotros__detalle detalle">
                     <p>Hola! Bienvenidos a mi página. Soy Natalia, creadora de Candycakes y quiero que nos conozcas,
@@ -119,13 +119,14 @@
 
                 </div>
             </div>
-            <div class="col-4">
-                <img class="nosotros__imagen imagen mx-auto mt-5 d-block" src="./images/Pastelera.png"
+            <div class="col-12  col-md-5 offset-md-0 my-3 order-1">
+                <img class="nosotros__imagen imagen img-fluid mx-auto mt-0 mt-md-5 d-block" src="./images/Pastelera.png"
                     alt="nosotros__imagen">
             </div>
         </section>
         <section id="catalogo" class="row container mx-auto my-5 py-3">
-            <div id="slider" class="col-12 col-xl-8 d-flex justify-content-center align-items-center">
+            <div id="slider"
+                class="col-12 col-xl-8 d-flex justify-content-center align-items-center order-2 order-md-1">
                 <div id="carouselExampleFade" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -174,7 +175,7 @@
                     </button>
                 </div>
             </div>
-            <div id="lista" class="col-12 col-xl-4 my-auto">
+            <div id="lista" class="col-12 col-xl-4 my-auto order-1">
                 <div>
                     <h3 class="subtitulo text-left">Catálogo</h3>
                     <p class="detalle text-left">En nuestra carta de productos se pueden encontrar:</p>
@@ -189,7 +190,7 @@
                     </ul>
                 </div>
                 <div class="d-grid gap-2">
-                    <a class="btn btn-md btn-block col-10 mx-auto btn-primary bg-rosa" data-toggle="modal"
+                    <a class="btn btn-md btn-block col-12 mx-auto btn-primary bg-rosa" data-toggle="modal"
                         data-target="#ModalCartaProductos" target="_blank">Ver carta de productos</a>
                 </div>
                 <!-- Modal carta de productos-->
@@ -204,7 +205,7 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <iframe width="100%" height="400"
+                                <iframe width="100%" height="98%"
                                     src="https://candycakes.shopzero.app/candycakes"></iframe>
                             </div>
                         </div>
@@ -234,11 +235,11 @@
                 <div class="contacto__detalle detalle">
                     <p class="mb-5">Podes comunicarte con nosotros a través de nuestras redes sociales y whatsapp.</p>
                     <a href="https://www.facebook.com/Candy-Cake-2468062716568223/" target="_blank"><img
-                            src="./images/fb-icon.png" class="mx-5" alt="Facebook" srcset=""></a>
+                            src="./images/fb-icon.png" class="mx-4" alt="Facebook" srcset=""></a>
                     <a href="https://api.whatsapp.com/send?phone=541123912494&text=Hola!%20Quiero%20hacerte%20una%20consulta."
-                        target="_blank"><img src="./images/wa-icon.png" class="mx-5" alt="Instagram" srcset=""></a>
+                        target="_blank"><img src="./images/wa-icon.png" class="mx-4" alt="Instagram" srcset=""></a>
                     <a href="https://www.instagram.com/candy.cake19/" target="_blank"><img src="./images/ig-icon.png"
-                            class="mx-5" alt="Instagram" srcset=""></a>
+                            class="mx-4" alt="Instagram" srcset=""></a>
                 </div>
             </article>
         </section>

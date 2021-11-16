@@ -58,9 +58,11 @@ nav {
 
 .navbar-nav a {
   color: white !important;
-  margin: 0 1rem;
 }
 
+a.navbar-brand {
+  margin: 0;
+}
 .navbar-nav a:hover {
   color: var(--rosa-chicle) !important;
   border-bottom: var(--rosa-chicle) 2px solid !important;
@@ -74,6 +76,11 @@ a.nav-link.active {
 .btn-contact {
   border-color: var(--rosa-chicle) !important;
 }
+
+a.nav-link.btn.btn-outline-light.btn-contact {
+  padding: 5px;
+}
+
 /* PORTADA */
 #portada_banner {
   position: relative;
@@ -170,12 +177,11 @@ a.nav-link.active {
   background-repeat: no-repeat;
   background-size: 100%;
   height: 380px;
-  background-position-x: -2vw;
 }
 
 .carousel {
-  width: 120px;
-  margin-top: -9px;
+  width: 9rem;
+  margin-top: -5rem;
 }
 
 .carousel-control-prev {
@@ -193,16 +199,17 @@ a.nav-link.active {
   align-items: center;
 }
 
-.modal-dialog {
-  width: 77% !important;
+.modal-content {
+  height: 90vh;
 }
+
 /* EXPERIENCIAS */
 #experiencias article {
   margin-top: 2rem;
 }
 /* MEDIA QUERIES */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-/* PORTADA */
+  /* PORTADA */
   #portada_banner {
     height: 65vh;
     border-radius: 0px 0px 25% 25%;
@@ -230,7 +237,7 @@ a.nav-link.active {
     align-items: center;
     justify-content: center;
   }
-/* TEXTOS */
+  /* TEXTOS */
   .titulo {
     font-size: 24px;
     line-height: 21px;
@@ -245,16 +252,16 @@ a.nav-link.active {
     font-size: 14px;
     line-height: 20px;
   }
-/* REGALO */
+  /* REGALO */
   .regalo-imagen {
     height: 130px;
     padding: 1.7rem 0;
   }
-/* NOSOTROS */
+  /* NOSOTROS */
   .nosotros__imagen {
     width: 140%;
   }
-/* CATALOGO */
+  /* CATALOGO */
   #slider {
     background-size: 100%;
     height: 25rem;
@@ -271,8 +278,8 @@ a.nav-link.active {
   }
 
   .carousel {
-    width: 17rem;
-    margin-top: 0;
+    width: 9rem !important;
+    margin-top: -5rem !important;
   }
 
   .carousel-control-prev {
@@ -282,7 +289,7 @@ a.nav-link.active {
   .carousel-control-next {
     right: -3rem !important;
   }
-/* EXPERIENCIAS */
+  /* EXPERIENCIAS */
   #experiencias {
     margin-top: 1.5rem;
   }
@@ -294,11 +301,10 @@ a.nav-link.active {
   #experiencias article {
     margin-top: 2rem;
   }
-
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-/* PORTADA */
+  /* PORTADA */
   #portada_banner {
     height: 55vh;
     border-radius: 0px 0px 25% 25%;
@@ -314,7 +320,7 @@ a.nav-link.active {
   #portada_banner .titulo {
     padding-bottom: 1rem;
   }
-/* TEXTOS */
+  /* TEXTOS */
   .titulo {
     font-size: 30px;
     line-height: 42px;
@@ -329,16 +335,16 @@ a.nav-link.active {
     font-size: 14px;
     line-height: 20px;
   }
-/* REGALO */
+  /* REGALO */
   .regalo-imagen {
     height: 130px;
     padding: 1.7rem 0;
   }
-/* NOSOTROS */
-.nosotros__imagen {
-  width: 110%;
-}
-/* CATALOGO */
+  /* NOSOTROS */
+  .nosotros__imagen {
+    width: 110%;
+  }
+  /* CATALOGO */
   #slider {
     background-size: 100%;
     background-position-x: -2vw;
@@ -367,7 +373,7 @@ a.nav-link.active {
   .carousel-control-next {
     right: -3rem !important;
   }
-/* EXPERIENCIAS */
+  /* EXPERIENCIAS */
   #experiencias {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -379,11 +385,11 @@ a.nav-link.active {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-/* MENU */
+  /* MENU */
   .navbar-nav a {
     margin: 0 1rem;
   }
-/* PORTADA */
+  /* PORTADA */
   #portada_banner {
     height: 75vh;
   }
@@ -402,7 +408,7 @@ a.nav-link.active {
   #portada_banner img {
     width: 83%;
   }
-/* TEXTOS */
+  /* TEXTOS */
   .titulo {
     /* font-size: var(--text-size * 3);
     line-height: var(--text-size * 4.5); */
@@ -421,17 +427,17 @@ a.nav-link.active {
     font-size: 12px;
     line-height: 17px;
   }
-/* REGALO */
+  /* REGALO */
   .regalo-imagen {
     height: 150px;
     padding: 2rem 0;
   }
-/* NOSOTROS */
-.nosotros__imagen {
-  width: 80%;
-  padding-top: 0;
-}
-/* CATALOGO */
+  /* NOSOTROS */
+  .nosotros__imagen {
+    width: 80%;
+    padding-top: 0;
+  }
+  /* CATALOGO */
   .carousel-item img {
     width: 8%;
   }
@@ -446,7 +452,7 @@ a.nav-link.active {
     width: 20rem;
     margin-top: 1.5rem;
   }
-/* EXPERIENCIAS */
+  /* EXPERIENCIAS */
   #experiencias {
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
@@ -462,7 +468,7 @@ a.nav-link.active {
     padding-top: 81px;
     background-size: cover;
   }
-/* MENU */
+  /* MENU */
   .navbar-nav a {
     margin: 0 1rem;
   }
@@ -474,7 +480,7 @@ a.nav-link.active {
   a.nav-link.active {
     border-bottom: var(--rosa-chicle) 2px solid !important;
   }
-/*  PORTADA */
+  /*  PORTADA */
   #portada_banner {
     position: relative;
     width: 100%;
@@ -487,7 +493,7 @@ a.nav-link.active {
     line-height: 60px;
     padding-bottom: 1.2rem;
   }
-  
+
   #portada_banner p {
     font-weight: 400;
     font-size: 14px;
@@ -498,7 +504,7 @@ a.nav-link.active {
   #portada_banner img {
     width: 100%;
   }
-/* TEXTOS */
+  /* TEXTOS */
   .titulo {
     /* font-size: var(--text-size * 3);
       line-height: var(--text-size * 4.5); */
@@ -519,22 +525,22 @@ a.nav-link.active {
     font-size: 14px;
     line-height: 21px;
   }
-/* REGALO */
+  /* REGALO */
   .regalo-imagen {
     height: 150px;
     padding: 2rem 0;
   }
-/* NOSOTROS */
-.nosotros__imagen {
-  width: 70%;
-  padding-top: 0;
-}
-/* CATALOGO */
+  /* NOSOTROS */
+  .nosotros__imagen {
+    width: 70%;
+    padding-top: 0;
+  }
+  /* CATALOGO */
   #catalogo {
     display: flex;
     flex-direction: row;
   }
-  
+
   .carousel-item img {
     width: 10%;
   }
@@ -556,7 +562,7 @@ a.nav-link.active {
   .carousel-control-next {
     right: -5rem !important;
   }
-/* EXPERIENCIAS */
+  /* EXPERIENCIAS */
   #experiencias {
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -565,5 +571,4 @@ a.nav-link.active {
   #experiencias .subtitulo {
     margin-bottom: 3rem;
   }
-
 }
