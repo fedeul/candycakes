@@ -92,7 +92,7 @@
             </div>
             <div id="nosotros-"></div>
         </section>
-        <section id="nosotros" class="row container mx-auto my-5 py-5">
+        <section id="nosotros" class="row container mx-auto my-5 py-3">
             <div class="col-1"></div>
             <div class="col-5 my-auto text-left">
                 <div class="nosotros__titulo subtitulo" id="nosotros_titulo">Un poco de nuestra historia...</div>
@@ -120,13 +120,13 @@
                 </div>
             </div>
             <div class="col-4">
-                <img class="nosotros__imagen imagen mx-auto d-block" src="./images/Pastelera.png"
+                <img class="nosotros__imagen imagen mx-auto mt-5 d-block" src="./images/Pastelera.png"
                     alt="nosotros__imagen">
             </div>
         </section>
-        <section id="catalogo" class="row container mx-auto my-5 py-5">
-            <div id="slider" class="col-8 d-flex justify-content-center align-items-center">
-                <div id="carouselExampleFade" class="carousel slide mt-5" data-ride="carousel">
+        <section id="catalogo" class="row container mx-auto my-5 py-3">
+            <div id="slider" class="col-12 col-xl-8 d-flex justify-content-center align-items-center">
+                <div id="carouselExampleFade" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="./images/catalogo/thumbs/alfajores.webp" class="d-block w-100" alt="...">
@@ -174,23 +174,24 @@
                     </button>
                 </div>
             </div>
-            <div class="col-4 my-auto">
-                <h3 class="subtitulo text-left">Catálogo</h3>
-                <p class="detalle text-left">En nuestra carta de productos se pueden encontrar:</p>
-                <ul class="detalle text-left">
-                    <li>Tortas</li>
-                    <li>Tartas</li>
-                    <li>Postres</li>
-                    <li>Chocolateria</li>
-                    <li>Desayunos y meriendas</li>
-                    <li>Candy bars</li>
-                    <li>Box temáticos</li>
-                </ul>
+            <div id="lista" class="col-12 col-xl-4 my-auto">
+                <div>
+                    <h3 class="subtitulo text-left">Catálogo</h3>
+                    <p class="detalle text-left">En nuestra carta de productos se pueden encontrar:</p>
+                    <ul class="detalle text-left">
+                        <li>Tortas</li>
+                        <li>Tartas</li>
+                        <li>Postres</li>
+                        <li>Chocolateria</li>
+                        <li>Desayunos y meriendas</li>
+                        <li>Candy bars</li>
+                        <li>Box temáticos</li>
+                    </ul>
+                </div>
                 <div class="d-grid gap-2">
-                    <a class="btn btn-lg btn-block col-8 col-md-10 mx-auto btn-primary bg-rosa" data-toggle="modal"
+                    <a class="btn btn-md btn-block col-10 mx-auto btn-primary bg-rosa" data-toggle="modal"
                         data-target="#ModalCartaProductos" target="_blank">Ver carta de productos</a>
                 </div>
-
                 <!-- Modal carta de productos-->
                 <div class="modal fade" id="ModalCartaProductos" tabindex="-1"
                     aria-labelledby="ModalCartaProductosLabel" aria-hidden="true">
@@ -209,10 +210,9 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
-        <section id="experiencias" class="py-5">
+        <section id="experiencias" class="py-3">
             <h2 class="subtitulo text-center">Experiencias de clientes</h2>
             <div class="row mx-auto container py-3">
                 <article class="col-md-4" id="exp1"><a
@@ -228,7 +228,7 @@
                 </article>
             </div>
         </section>
-        <section id="contacto" class=" container my-5 pb-5">
+        <section id="contacto" class=" container my-auto pb-5">
             <article>
                 <h2 class="contacto__titulo subtitulo " id="contacto_titulo">CONTACTO</h2>
                 <div class="contacto__detalle detalle">
