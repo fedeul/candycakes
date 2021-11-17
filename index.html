@@ -11,7 +11,6 @@
     <!-- CSS only -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -19,31 +18,272 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '699841220986382');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=699841220986382&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
 </head>
 
 <body data-spy="scroll">
-    <div
-        style=" font-family: Arial, Helvetica, sans-serif;display: flex;flex-direction: column; justify-content: center;align-items: center;align-content: center;height: 90vh;">
-        <h1>Visitá</h1>
-        <img src="./images/logo.png" alt="Candy & Cakes | Pastelería Artesanal">
-        <h3>PRÓXIMAMENTE...</h3>
+    <header class="header fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light container">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="img-fluid" src="./images/logo-nav.png"
+                        alt="Candy & Cakes | Pastelería Artesanal"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav container text-light d-flex justify-content-end">
+                        <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                        <a class="nav-link" href="#nosotros-">NOSOTROS</a>
+                        <a class="nav-link" href="#catalogo">CATÁLOGO</a>
+                        <a class="nav-link" href="#experiencias">EXPERIENCIAS</a>
+                        <a class="nav-link btn btn-outline-light btn-contact" href="#contacto">CONTACTO</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="portada_banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5 offset-md-0 my-auto align-self-center order-2 order-md-1">
+                        <h1 class="portada__titulo titulo rosa">Encuentra las mejores opciones para tus regalos</h1>
+                        <p class="portada__p rosa">Nuestro trabajo es ayudarte a crear los mas ricos y divertidos
+                            presentes
+                            para
+                            tus seres
+                            queridos
+                            o para vos...</p>
+                        <div class="d-grid gap-2">
+                            <a class="btn btn-lg btn-block col-8 col-md-10 mx-auto btn-primary bg-azul"
+                                href="#contacto">CONTACTANOS</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7 offset-md-0 my-3 order-1 align-self-center portada__imagen">
+                        <img src="./images/torta-home.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="regalo my-5" id="regalo">
+            <h2 class="titulo rosa text-center my-5" id="regalo_titulo">Tu próximo regalo</h2>
+            <div class="row container mx-auto">
+                <article class="col-4 regalo__ubicacion ubicacion" id="regalo_ubicacion">
+                    <h3 class="subtitulo">UBICACION</h3>
+                    <img class="regalo-imagen mx-auto d-block" src="./images/regalo/Group 139.png"
+                        alt="ubicacion__imagen">
+                    <h4 class=" detalle">LONGCHAMPS - BUENOS AIRES</h4>
+                </article>
+                <article class="col-4 regalo__delivery delivery" id="regalo_delivery">
+                    <h3 class="subtitulo">DELIVERY</h3>
+                    <img class="regalo-imagen mx-auto d-block" src="./images/regalo/Group 140.png"
+                        alt="delivery__imagen">
+                    <h4 class="detalle">A TODA ZONA SUR</h4>
+                </article>
+                <article class="col-4 regalo__medios medios" id="regalo_medis">
+                    <h3 class="subtitulo">METODOS DE PAGO</h3>
+                    <img class="regalo-imagen mx-auto d-block" src="./images/regalo/Group 141.png" alt="medios__imagen">
+                    <h4 class="detalle">TODOS LOS MEDIOS DE PAGO</h4>
+                </article>
+            </div>
+            <div id="nosotros-"></div>
+        </section>
+        <section id="nosotros" class="row container mx-auto my-5 py-3">
+            <div class="col-1 d-none d-sm-block"></div>
+            <div class="col-12  col-md-6 offset-md-0 my-auto text-left order-2 order-md-1">
+                <div class="nosotros__titulo subtitulo" id="nosotros_titulo">Un poco de nuestra historia...</div>
+                <div class="nosotros__detalle detalle">
+                    <p>Hola! Bienvenidos a mi página. Soy Natalia, creadora de Candycakes y quiero que nos conozcas,
+                        ¿Empezamos?</p>
 
+                    <p>Candycakes nace en mayo del 2020, en plena
+                        pandemia, pensandolo como un
+                        emprendimiento en el cual pudiera trabajar desde casa y a la vez cuidar a mi hijo Santino,
+                        aunque lo venia planificando un tiempo atrás.
+                        El amor por la pasteleria, me fue llevando durante el año 2019 a capacitarme en IGA,
+                        tomar clases con pasteleras referentes y a
+                        asistir a expos.</p>
 
-        <section id="contacto" class=" container my-5 pb-5">
+                    <p>Asi fue como lo que comenzó como un hobbie,
+                        hoy se transformo en un hermoso
+                        emprendimiento, donde podes encontrar propuestas deliciosas y totalmente artesanales
+                        sin aditivos ni conservantes.</p>
+
+                    <p>Espero que disfruten de cada productos que
+                        ofrecemos y logren sentir el amor con el que
+                        están elaborados.</p>
+
+                </div>
+            </div>
+            <div class="col-12  col-md-5 offset-md-0 my-3 order-1">
+                <img class="nosotros__imagen imagen img-fluid mx-auto mt-0 mt-md-5 d-block" src="./images/Pastelera.png"
+                    alt="nosotros__imagen">
+            </div>
+        </section>
+        <section id="catalogo" class="row container mx-auto my-5 py-3">
+            <div id="slider"
+                class="col-12 col-xl-8 d-flex justify-content-center align-items-center order-2 order-md-1">
+                <div id="carouselExampleFade" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/catalogo/thumbs/alfajores.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/catalogo/thumbs/desayunos.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/catalogo/thumbs/torta.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/catalogo/thumbs/cajas.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/catalogo/thumbs/postres.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/catalogo/thumbs/torta2.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/catalogo/thumbs/caja.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/catalogo/thumbs/cuadraditos.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/catalogo/thumbs/cakepops.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/catalogo/thumbs/mini cakes.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/catalogo/thumbs/desayuno-madre.webp" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleFade"
+                        data-slide="prev">
+                        <img src="./images/Arrow---Left-Circle.png" alt="" srcset="">
+                        <span class="sr-only">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-target="#carouselExampleFade"
+                        data-slide="next">
+                        <img src="./images/Arrow---Right-Circle.png" alt="" srcset="">
+                        <span class="sr-only">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div id="lista" class="col-12 col-xl-4 my-auto order-1">
+                <div>
+                    <h3 class="subtitulo text-left">Catálogo</h3>
+                    <p class="detalle text-left">En nuestra carta de productos se pueden encontrar:</p>
+                    <ul class="detalle text-left">
+                        <li>Tortas</li>
+                        <li>Tartas</li>
+                        <li>Postres</li>
+                        <li>Chocolateria</li>
+                        <li>Desayunos y meriendas</li>
+                        <li>Candy bars</li>
+                        <li>Box temáticos</li>
+                    </ul>
+                </div>
+                <div class="d-grid gap-2">
+                    <a class="btn btn-md btn-block col-12 mx-auto btn-primary bg-rosa" data-toggle="modal"
+                        data-target="#ModalCartaProductos" target="_blank">Ver carta de productos</a>
+                </div>
+                <!-- Modal carta de productos-->
+                <div class="modal fade" id="ModalCartaProductos" tabindex="-1"
+                    aria-labelledby="ModalCartaProductosLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="ModalCartaProductosLabel">Carta de productos</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <iframe width="100%" height="98%"
+                                    src="https://candycakes.shopzero.app/candycakes"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="experiencias" class="py-3">
+            <h2 class="subtitulo text-center">Experiencias de clientes</h2>
+            <div class="row mx-auto container py-3">
+                <article class="col-md-4" id="exp1"><a
+                        href="https://www.google.com/maps/contrib/105486954141066264022/place/ChIJ2dUrHHQro5URwVnS3ikZpyY/@-33.8690026,-63.5788357,7z/data=!4m6!1m5!8m4!1e1!2s105486954141066264022!3m1!1e1"
+                        target="_blank"><img src="./images/exp1.png" class="mx-auto d-block"
+                            alt="Experiencia de cliente" srcset=""></a>
+                </article>
+                <article class="col-md-4" id="exp2"><a href="https://goo.gl/maps/piADJ5nMCb16AzY49" target="_blank"><img
+                            src="./images/exp2.png" class="mx-auto d-block" alt="Experiencia de cliente" srcset=""></a>
+                </article>
+                <article class="col-md-4" id="exp3"><a href="https://goo.gl/maps/DU1PhdVY7ydBE7dD7" target="_blank"><img
+                            src="./images/exp3.png" class="mx-auto d-block" alt="Experiencia de cliente" srcset=""></a>
+                </article>
+            </div>
+        </section>
+        <section id="contacto" class=" container my-auto pb-5">
             <article>
+                <h2 class="contacto__titulo subtitulo " id="contacto_titulo">CONTACTO</h2>
                 <div class="contacto__detalle detalle">
-                    <p class="mb-5">Mientras tanto, podés comunicarte con nosotros a través de nuestras redes sociales y
-                        whatsapp.</p>
+                    <p class="mb-5">Podes comunicarte con nosotros a través de nuestras redes sociales y whatsapp.</p>
                     <a href="https://www.facebook.com/Candy-Cake-2468062716568223/" target="_blank"><img
-                            src="./images/fb-icon.png" class="mx-5" alt="Facebook" srcset=""></a>
+                            src="./images/fb-icon.png" class="mx-4" alt="Facebook" srcset=""></a>
                     <a href="https://api.whatsapp.com/send?phone=541123912494&text=Hola!%20Quiero%20hacerte%20una%20consulta."
-                        target="_blank"><img src="./images/wa-icon.png" class="mx-5" alt="Instagram" srcset=""></a>
+                        target="_blank"><img src="./images/wa-icon.png" class="mx-4" alt="Instagram" srcset=""></a>
                     <a href="https://www.instagram.com/candy.cake19/" target="_blank"><img src="./images/ig-icon.png"
-                            class="mx-5" alt="Instagram" srcset=""></a>
+                            class="mx-4" alt="Instagram" srcset=""></a>
                 </div>
             </article>
         </section>
-    </div>
+    </main>
+    <footer class="footer mt-auto py-3">
+        <div class="col-12 text-center "><small> Copyright ©
+                <script>document.write(new Date().getFullYear());</script><br>Todos los derechos reservados<br>Este
+                sitio fue desarrollado por <span class="rosa text-white"><a
+                        href="https://www.dashboard.ltd/ES/about.php" target="_blank" rel="noreferrer"
+                        style="color: #ffffff; text-decoration: none;">Federico
+                        Ulbrich</a></span> y <span class="rosa text-white">Lucas es Lucas</span><br> Diseño UI/UX: <span
+                    class="rosa text-white">Federico
+                    Acosta</span> |
+                Marketing y
+                redes sociales:
+                <span class="rosa text-white">Lucía Toribio</span>
+            </small></div>
+    </footer>
+    <script>$('.carousel').carousel()</script>
+    <!--    SMOOTH SCROLL-->
+    <script src="./js/smooth-scroll.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
 </body>
 
 </html>
