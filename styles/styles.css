@@ -180,7 +180,7 @@ a.nav-link.btn.btn-outline-light.btn-contact {
 }
 
 .carousel {
-  width: 9rem;
+  width: 15rem;
   margin-top: -5rem;
 }
 
@@ -208,6 +208,7 @@ a.nav-link.btn.btn-outline-light.btn-contact {
   margin-top: 2rem;
 }
 /* MEDIA QUERIES */
+
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   /* PORTADA */
   #portada_banner {
@@ -262,6 +263,10 @@ a.nav-link.btn.btn-outline-light.btn-contact {
     width: 140%;
   }
   /* CATALOGO */
+
+  .carousel {
+    width: 15rem;
+  }
   #slider {
     background-size: 100%;
     height: 25rem;
@@ -307,6 +312,7 @@ a.nav-link.btn.btn-outline-light.btn-contact {
   /* PORTADA */
   #portada_banner {
     height: 100vh;
+    padding-top: 6rem;
     border-radius: 0px 0px 25% 25%;
   }
 
@@ -570,5 +576,12 @@ a.nav-link.btn.btn-outline-light.btn-contact {
 
   #experiencias .subtitulo {
     margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  /* PORTADA */
+  #portada_banner {
+    padding-top: 6rem;
   }
 }
